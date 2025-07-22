@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import 'tailwindcss';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #4a60a1;
+}
+
+/* @media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+} */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter/Inter-VariableFont_opsz,wght.ttf');
+}
+
+@theme {
+  --font-inter: 'Inter';
+  --font-freckle: 'Freckle Face';
+
+  --color-primary-900: #0f1320;
+  --color-primary-800: #1e2640;
+  --color-primary-700: #2c3a61;
+  --color-primary-600: #3b4d81;
+  --color-primary-500: #4a60a1;
+  --color-primary-400: #6e80b4;
+  --color-primary-300: #92a0c7;
+  --color-primary-200: #b7bfd9;
+  --color-primary-100: #dbdfec;
+  --color-primary-50: #edeff6;
+  --color-primary-blue: #063053;
+
+  --color-gray-black: #1b1d1f;
+  --color-gray-700: #363a3d;
+  --color-gray-600: #52565c;
+  --color-gray-500: #6d737a;
+  --color-gray-400: #889099;
+  --color-gray-300: #a0a6ad;
+  --color-gray-200: #b8bcc2;
+  --color-gray-100: #cfd3d6;
+  --color-gray-50: #e7e9eb;
+  --color-gray-white: #ffffff;
+}
+
+.parent {
+  position: relative;
+  background: red;
+  width: 60px;
+  height: 60px;
+}
+.child {
+  width: 60px;
+  height: 60px;
+  background-color: skyblue;
+}
+
+.moved {
+  /* Equal to: translateX(10px) or translate(10px, 0) */
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
