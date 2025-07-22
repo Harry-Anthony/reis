@@ -6,7 +6,7 @@ import { Typography } from '../../Typography/Typography'
 type Props = {}
 export const FooterSection = ({}: Props) => {
   return (
-    <div className="flex flex-wrap justify-center gap-[12.1875rem] w-full pt-25 pb-12.5">
+    <div className="flex sm:flex-row flex-col flex-wrap lg:justify-center px-15 sm:gap-[12.1875rem] gap-6 w-full pt-25 pb-12.5">
       <div className="flex flex-col w-[312px]">
         <AppLogo variant="secondary" />
         <Typography variant="h4" className="text-gray-black mt-6">

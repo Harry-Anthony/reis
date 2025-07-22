@@ -10,7 +10,7 @@ export const ProductSection = ({ title, subtitle }: ProductSectionProps) => {
   return (
     <div className="flex flex-col py-25 items-center">
       <SectionTitle title={title} subtitle={subtitle} />
-      <div className="grid grid-cols-3 gap-6">
+      <div className="lg:grid grid-cols-3 gap-6">
         <ProductCard
           car={4}
           bath={4}
