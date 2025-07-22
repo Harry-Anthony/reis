@@ -9,7 +9,7 @@ export const BentoGrid = ({ title, subtitle }: BentoGridProps) => {
   return (
     <div className="px-5 sm:px-30 xl:px-75 py-25 flex flex-col items-center">
       <SectionTitle title={title} subtitle={subtitle} />
-      <div className="md:grid md:grid-cols-3 flex flex-col w-full gap-6">
+      <div className="sm:grid md:grid-cols-3 sm:grid-cols-2 flex flex-col w-full gap-6">
         <BentoCard
           cover={
             'https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
@@ -31,7 +31,7 @@ export const BentoGrid = ({ title, subtitle }: BentoGridProps) => {
           title={'Washington'}
           subtitle={'25 listings'}
         />
-        <div className="col-span-2">
+        <div className="md:col-span-2">
           <BentoCard
             cover={
               'https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
