@@ -22,7 +22,7 @@ export const Hero = ({ }: Props) => {
           </div>
         </div>
       </div>
-      <div className="-mt-33.25 relative z-10 flex flex-col items-center">
+      <div className="hidden lg:flex -mt-33.25 relative z-10 flex-col items-center">
         <div className=" flex justify-center flex-row gap-[10px]">
           <Button variant={'active'} isActive title={'Rent'} />
           <Button variant={'primary'} title={'Sale'} />

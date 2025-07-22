@@ -1,22 +1,10 @@
 import './App.css'
-import { AppLogo } from './components/AppLogo/AppLogo'
-import { BentoCard } from './components/BentoCard/BentoCard'
-import { Button } from './components/Button/Button'
-import { FeatureCard } from './components/FeatureCard/FeatureCard'
-import { FooterItem } from './components/FooterItem/FooterItem'
-import { ProductCard } from './components/ProductCard/ProductCard'
-import { RentCard } from './components/RentCard/RentCard'
-import { SocialMediaCard } from './components/SocialMediaCard/SocialMediaCard'
-import { baseClassNames, Typography } from './components/Typography/Typography'
 import { BentoGrid } from './components/Widget/BentoGrid/BentoGrid'
 import { ContactUsSection } from './components/Widget/ContactUsSection'
 import { FeatureSection } from './components/Widget/FeatureSection/FeatureSection'
 import { FooterSection } from './components/Widget/FooterSection/FooterSection'
 import { Hero } from './components/Widget/Hero/Hero'
 import { ProductSection } from './components/Widget/ProductSection/ProductSection'
-import { SelectListBlock } from './components/Widget/SelectListBlock/SelectListBlock'
-
-const container = 'w-[40px] h-[40px] rounded-sm'
 
 function App() {
   return (
@@ -45,9 +33,8 @@ function App() {
           'https://images.pexels.com/photos/1797393/pexels-photo-1797393.jpeg'
         }
         title={'Find Best Place For Living'}
-        subtitle={
-          `Spend vacations in best hotels and resorts find the great place of your
-choice using different searching options.`        }
+        subtitle={`Spend vacations in best hotels and resorts find the great place of your
+choice using different searching options.`}
       />
       <FooterSection />
 

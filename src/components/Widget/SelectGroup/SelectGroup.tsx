@@ -4,7 +4,7 @@ import { SelectListBlock } from '../SelectListBlock/SelectListBlock'
 type SelectGroupProps = {}
 export const SelectGroup = ({}: SelectGroupProps) => {
   return (
-    <div className="flex flex-row items-center bg-gray-white py-8 rounded-lg">
+    <div className="flex flex-row flex-wrap justify-center items-center bg-gray-white py-8 rounded-lg">
       <SelectListBlock
         title={'Select your city'}
         options={[
@@ -18,11 +18,11 @@ export const SelectGroup = ({}: SelectGroupProps) => {
           },
         ]}
         sectionTitle={'Locations'}
-        customStyle="pr-14.75 ml-15.5"
+        customStyle="lg:pr-14.75 lg:ml-15.5 mx-5"
       />
       <SelectListBlock
         title={'Select rent type'}
-        customStyle="px-10.75"
+        customStyle="lg:px-10.75 mx-5"
         options={[
           {
             id: 1,
@@ -36,7 +36,7 @@ export const SelectGroup = ({}: SelectGroupProps) => {
         sectionTitle={'Property Type'}
       />
       <SelectListBlock
-        customStyle="px-14"
+        customStyle="lg:px-14 mx-5"
         title={'Select rent range'}
         options={[
           {
@@ -50,7 +50,7 @@ export const SelectGroup = ({}: SelectGroupProps) => {
         ]}
         sectionTitle={'Rant range'}
       />
-      <Button customStyle="mx-21.5" variant={'contained'} title={'Search'} />
+      <Button customStyle="lg:mx-21.5 mx-5" variant={'contained'} title={'Search'} />
     </div>
   )
 }
