@@ -10,12 +10,28 @@ function TopBar() {
     [0, 100, 200],
     ['rgba(44, 58, 97, 0)', 'rgba(44, 58, 97, 0.5)', 'rgba(44, 58, 97, 1)']
   )
+  const height = useTransform(
+    scrollY,
+    [0, 50, 100],
+    ['max-content', '30px', '0px']
+  )
+
+  const paddingVert = useTransform(
+    scrollY,
+    [0, 100],
+    ['17px', '0px']
+  )
+
+
   return (
     <motion.div
       style={{
         backgroundColor: value,
+        height,
+        paddingTop: paddingVert,
+        paddingBottom: paddingVert
       }}
-      className="hidden lg:flex flex flex-row w-full justify-between pb-4 pt-7 items-start border-b-[0.5px] px-12.5 border-[#dbdfec80] xl:px-25"
+      className="hidden lg:flex overflow-hidden flex flex-row w-full justify-between py-5 items-start border-b-[0.5px] px-12.5 border-[#dbdfec80] xl:px-25"
     >
       <div className="flex flex-row items-center text-white">
         <Icon
